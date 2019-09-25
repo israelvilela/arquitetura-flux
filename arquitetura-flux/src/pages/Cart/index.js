@@ -35,7 +35,7 @@ function Cart({ cart, total, removeFromCart, updateAmount }) {
         </thead>
         <tbody>
           {cart.map(product => (
-            <tr>
+            <tr key={product.id}>
             <td>
               <img
                 src={product.image}
